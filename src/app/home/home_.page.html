@@ -1,0 +1,182 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button><img src="assets/imgs/ic_menu.png"></ion-menu-button>
+		</ion-buttons>
+		<ion-title>
+			<div class="title_inner d-flex">
+				<h3 class="page_title">{{'app_title' | translate}}</h3>
+				<span class="end cart_icon" (click)="cart()">
+					<img src="assets/imgs/ic_my_cart.png">
+					<ion-badge>1</ion-badge>
+				</span>
+			</div>
+		</ion-title>
+	</ion-toolbar>
+
+	<div class="search_box d-flex" (click)="search()">
+		<ion-icon class="zmdi zmdi-search ion-text-start"></ion-icon>
+		<h2>{{'placeholder_search' | translate}}</h2>
+	</div>
+</ion-header>
+
+<ion-content>
+	<div class="banner">
+			<ion-slides pager="true" loop="true">
+			<ion-slide>
+				<div class="img_box center_img">
+					<img src="assets/imgs/banner_img_1.jpg" class="crop_img">
+				</div>
+			</ion-slide>
+			<ion-slide>
+				<div class="img_box center_img">
+					<img src="assets/imgs/banner_img_2.jpg" class="crop_img">
+				</div>
+			</ion-slide>
+			<ion-slide>
+				<div class="img_box center_img">
+					<img src="assets/imgs/banner_img_3.jpg" class="crop_img">
+				</div>
+			</ion-slide>
+			<ion-slide>
+				<div class="img_box center_img">
+					<img src="assets/imgs/banner_img_4.jpg" class="crop_img">
+				</div>
+			</ion-slide>
+		</ion-slides>
+	</div>
+
+<div class="category_row">
+		<h4 class="ion-text-center">{{'home_cat_title' | translate }}</h4>
+		<ion-slides pager="true" loop="true">
+			<ion-slide>
+			<ion-row>
+			<ion-col size="4">
+				<div class="item_box ion-text-center" (click)="category()">
+					<div class="img_box center_img">
+						<img src="assets/imgs/category/category_19.png" class="crop_img">
+					</div>
+					<h2>Vegetables & <br> Fruits</h2>
+				</div>
+			</ion-col>
+			<ion-col size="4">
+				<div class="item_box ion-text-center" (click)="category()">
+					<div class="img_box center_img">
+						<img src="assets/imgs/category/category_20.png" class="crop_img">
+					</div>
+					<h2>Bakery & Dairy <br> products</h2>
+				</div>
+			</ion-col>
+			<ion-col size="4">
+				<div class="item_box ion-text-center" (click)="category()">
+					<div class="img_box center_img"> 
+						<img src="assets/imgs/category/category_3.png" class="crop_img">
+					</div>
+					<h2>Foodgrains Oil <br> & masaala</h2>
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-slide>
+
+	<ion-slide>
+		<ion-row>
+			<ion-col size="4">
+				<div class="item_box ion-text-center" (click)="category()">
+					<div class="img_box center_img">
+						<img src="assets/imgs/category/category_19.png" class="crop_img">
+					</div>
+					<h2>Vegetables & <br> Fruits</h2>
+				</div>
+			</ion-col>
+			<ion-col size="4">
+				<div class="item_box ion-text-center" (click)="category()">
+					<div class="img_box center_img">
+						<img src="assets/imgs/category/category_20.png" class="crop_img">
+					</div>
+					<h2>Bakery & Dairy <br> products</h2>
+				</div>
+			</ion-col>
+			<ion-col size="4">
+				<div class="item_box ion-text-center" (click)="category()">
+					<div class="img_box center_img"> 
+						<img src="assets/imgs/category/category_3.png" class="crop_img">
+					</div>
+					<h2>Foodgrains Oil <br> & masaala</h2>
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-slide>
+
+</ion-slides>
+
+	</div>
+<!-- <ion-card>
+  <img src="assets/imgs/offers/banner1.png" class="crop_img">
+  <ion-card-content>
+    <ion-card-title>
+      Nine Inch Nails Live
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+  </ion-card-content>
+</ion-card> -->
+
+<ion-content class="card-background-page">
+	<h5 class="ion-text-center">Top Deals</h5>
+  <ion-card>
+  <img src="assets/imgs/offers/banner1.png" class="crop_img">
+    <div class="card-title">São Paulo</div>
+    <div class="card-subtitle">41 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/offers/banner2.jpg" class="crop_img">
+    <div class="card-title">Amsterdam</div>
+    <div class="card-subtitle">64 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/offers/banner3.jpg" class="crop_img">
+    <div class="card-title">San Francisco</div>
+    <div class="card-subtitle">72 Listings</div>
+  </ion-card>
+
+  <ion-card>
+   <img src="assets/imgs/offers/banner4.jpg" class="crop_img">
+    <div class="card-title">Madison</div>
+    <div class="card-subtitle">28 Listings</div>
+  </ion-card>
+
+</ion-content>
+<!-- <div class="category_row">
+		<h4 class="ion-text-center">Today's Deals</h4>
+	<div class="banner">
+			<ion-slides pager="true" loop="true">
+			<ion-slide>
+				<div class="img_box center_img">
+					<img src="assets/imgs/offers/banner1.png" class="crop_img">
+				</div>
+			</ion-slide>
+			<ion-slide>
+				<div class="img_box center_img">
+					<img src="assets/imgs/offers/banner2.jpg" class="crop_img">
+				</div>
+			</ion-slide>
+			<ion-slide>
+				<div class="img_box center_img">
+					<img src="assets/imgs/offers/banner3.jpg" class="crop_img">
+				</div>
+			</ion-slide>
+			<ion-slide>
+				<div class="img_box center_img">
+					<img src="assets/imgs/offers/banner4.jpg" class="crop_img">
+				</div>
+			</ion-slide>
+		</ion-slides>
+	</div>
+</div>
+ -->
+	
+</ion-content>

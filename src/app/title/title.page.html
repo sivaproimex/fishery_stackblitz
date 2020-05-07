@@ -1,0 +1,67 @@
+<!--
+<ion-header>
+  <ion-toolbar>
+    <ion-title>title</ion-title>
+  </ion-toolbar>
+</ion-header>
+-->
+<ion-content (click)="dismiss()">
+
+</ion-content>
+<ion-footer no-border>
+	<ion-icon class="zmdi zmdi-close ion-text-end" (click)="dismiss()"></ion-icon>
+	<div class="form">
+		<ion-list lines="none">
+			<h1>{{'select_address_type' | translate}}</h1>
+			<ion-radio-group>
+				<ion-row>
+					<ion-col size="4">
+						<ion-item lines="none">
+							<ion-radio slot="start" value="home"></ion-radio>
+							<ion-label class="d-flex">
+								<div class="img_container">
+									<div class="img_box">
+										<img src="assets/imgs/ic_home_active.png">
+									</div>
+									<h2>{{'home' | translate}}</h2>
+								</div>
+							</ion-label>
+						</ion-item>
+					</ion-col>
+					<ion-col size="4">
+						<ion-item lines="none">
+							<ion-radio slot="start" value="office"></ion-radio>
+							<ion-label class="d-flex">
+								<div class="img_container">
+									<div class="img_box">
+										<img src="assets/imgs/ic_office_active.png">
+									</div>
+									<h2>{{'office' | translate}}</h2>
+								</div>
+							</ion-label>
+						</ion-item>
+					</ion-col>
+					<ion-col size="4">
+						<ion-item lines="none">
+							<ion-radio slot="start" value="Other"></ion-radio>
+							<ion-label class="d-flex">
+								<div class="img_container">
+									<div class="img_box">
+										<img src="assets/imgs/ic_location_active.png">
+									</div>
+									<h2>{{'other' | translate}}</h2>
+								</div>
+							</ion-label>
+						</ion-item>
+					</ion-col>
+				</ion-row>
+			</ion-radio-group>
+
+			<h1>{{'enter_address_detail' | translate}}</h1>
+			<ion-item lines="none">
+				<ion-input type="text" value="14134, silver Green Street, 2nd Avenue"></ion-input>
+			</ion-item>
+		</ion-list>
+		<ion-button size="large" expand="block" class="btn"> {{'save' | translate}}</ion-button>
+	</div> 
+</ion-footer>

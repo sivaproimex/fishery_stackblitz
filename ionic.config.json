@@ -1,0 +1,7 @@
+{
+  "name": "Fishery Fish",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

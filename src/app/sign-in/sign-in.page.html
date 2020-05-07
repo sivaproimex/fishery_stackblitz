@@ -1,0 +1,39 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title>
+			<div class="item_inner d-flex">
+				<span class="center">{{"app_title" | translate}}</span>
+
+				<!-- <span class="end" (click)="home()">{{"skip" | translate}}</span> -->
+			</div>
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+	<div class="form">
+		 <form [formGroup]="onLoginForm" class="list-form">
+		<p class="ion-text-center">{{"sign_in_to" | translate}} {{"app_title" | translate}}</p>
+		<ion-list lines="none">
+			<ion-item lines="none">
+				<ion-label position="fixed">{{'mobile' | translate}}</ion-label>
+				<ion-input class="ion-text-end" type="tel" placeholder="9789639143" maxlength="10" pattern="[1-9]{1}[0-9]{9}" formControlName="mobile" #mobile ></ion-input>
+			</ion-item>
+			 <p ion-text class="text08" *ngIf="onLoginForm.get('mobile').touched && onLoginForm.get('mobile').hasError('required')">
+                <ion-text color="warning">
+                    Please enter valid mobile number.
+                </ion-text>
+            </p>
+		</ion-list>
+		<ion-button size="large" expand="block" class="btn" (click)="clickSubmit(mobile.value)" [disabled]="!onLoginForm.valid" tappable>{{'continue' | translate}}</ion-button>
+
+		<!-- <h2 class="ion-text-center" (click)="password()">{{'forgot_password' | translate}}?</h2> -->
+
+		<div class="registered_yet">
+			<p class="ion-text-center">{{'not_registered_yet' | translate}}</p>
+			<ion-button size="large" expand="block" class="btn"  fill="outline" (click)="sign_up()">{{'registered_now' | translate}}</ion-button>
+		</div>
+
+		  </form>
+	</div>
+</ion-content>

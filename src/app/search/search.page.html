@@ -1,0 +1,583 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+		</ion-buttons>
+		<ion-title>
+			{{'search' | translate}}
+		</ion-title>
+	</ion-toolbar>
+	<div class="search_box d-flex">
+		<ion-icon class="zmdi zmdi-search ion-text-start"></ion-icon>
+		<ion-searchbar class="ion-no-padding" searchIcon="hide" placeholder="{{'placeholder_search' | translate}}"></ion-searchbar>
+	</div>
+</ion-header>
+
+<ion-content class="bg_color">
+	<div class="recent_search">
+		<h2 class="d-flex">
+			{{"recent_search" | translate}}
+			<span class="end">{{"clear_history" | translate}}</span>
+		</h2>
+
+		<h3 class="d-flex">
+			<ion-icon class="zmdi zmdi-time-restore"></ion-icon>
+			Vicco
+		</h3>
+
+		<h3 class="d-flex">
+			<ion-icon class="zmdi zmdi-time-restore"></ion-icon>
+			Tomatoes
+		</h3>
+	</div>
+
+
+	<div class="search_result">
+		<h2> {{"search_trend" | translate}} Fresh</h2>
+		<div class="item_container">
+		<ion-row>
+						<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh Onino - Medium <br> Red 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/1.png">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2> Cauliflower fresh with<br> leaf 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/2.png">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh ladies finger <br> appx. 12 pcs in 1 kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/3.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2> Fresh potato - Medium <br> size 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/4.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh Capsicum <br> appx. 12 pcs in 1 kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/5.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2> Fresho Tomato - Medium <br> size 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/6.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+				<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh Onino - Medium <br> Red 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/7.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2> Cauliflower fresh with<br> leaf 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/8.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh ladies finger <br> appx. 12 pcs in 1 kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/1.png">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2> Fresh potato - Medium <br> size 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/2.png">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh Capsicum <br> appx. 12 pcs in 1 kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+					<img src="assets/imgs/products/3.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2> Fresho Tomato - Medium <br> size 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/4.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+				<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh Onino - Medium <br> Red 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/1.png">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh Onino - Medium <br> Red 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/1.png">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2> Cauliflower fresh with<br> leaf 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/2.png">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh ladies finger <br> appx. 12 pcs in 1 kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/3.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2> Fresh potato - Medium <br> size 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/4.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh Capsicum <br> appx. 12 pcs in 1 kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/5.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2> Fresho Tomato - Medium <br> size 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/6.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+				<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh Onino - Medium <br> Red 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/7.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2> Cauliflower fresh with<br> leaf 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/8.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh ladies finger <br> appx. 12 pcs in 1 kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/1.png">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2> Fresh potato - Medium <br> size 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/2.png">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh Capsicum <br> appx. 12 pcs in 1 kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+					<img src="assets/imgs/products/3.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+			<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2> Fresho Tomato - Medium <br> size 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/4.jpg">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+				<ion-col size="6">
+				<div class="item_box">
+					<div class="item_header" (click)="item_details()">
+						<h2>Fresh Onino - Medium <br> Red 1kg</h2>
+					</div>
+
+					<div class="img_box" (click)="item_details()">
+						<img src="assets/imgs/products/1.png">
+					</div>
+
+					<div class="item_footer d-flex">
+						<h5>
+							<span>$ 1.50</span>
+							<span><del>$2.00</del></span>
+						</h5>
+
+						<h4 class="end">{{'add' | translate}}</h4>
+					</div>
+				</div>
+			</ion-col>
+
+		</ion-row>
+	</div>
+	</div>
+</ion-content>

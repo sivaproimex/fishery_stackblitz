@@ -1,0 +1,24 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+		</ion-buttons>
+		<ion-title>
+			{{"verify_code" | translate}}
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+	<div class="form">
+		<p class="ion-text-center">{{"verify_label" | translate}} <br> {{"verify_label1" | translate}} +1 978 963 9143</p>
+		<ion-list lines="none">
+			<ion-item lines="none">
+				<ion-label position="fixed">{{'verify_code' | translate}}</ion-label>
+				<ion-input class="ion-text-end" type="name" value="- - - - - -"></ion-input>
+			</ion-item>
+		</ion-list>
+		<ion-button size="large" expand="block" class="btn" (click)="home()">{{'verify' | translate}}</ion-button>
+		<h2 class="d-flex">1:3 {{"min_left" | translate}}  <span class="end">{{"resend" | translate}}</span></h2>
+	</div>
+</ion-content>

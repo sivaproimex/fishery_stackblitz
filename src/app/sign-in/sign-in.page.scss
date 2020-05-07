@@ -1,0 +1,117 @@
+ion-header ion-toolbar ion-title {
+	padding: 0 15px !important;
+
+	span {
+		&.center {
+			margin: 0;
+			text-transform: uppercase;
+			font-size: 0.8rem;
+			font-weight: 600;
+			letter-spacing: 2px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			width: 100%;
+			text-align: center;
+		}
+
+		&.end {
+			font-weight: 400;
+			letter-spacing: 2px;
+			font-size: .8rem;
+			position: relative;
+			z-index: 999;
+		}
+	}
+}
+
+.form {
+	padding-top: 40px;
+
+	p {
+		font-size: 0.8rem;
+		font-weight: 400;
+		margin: 0;
+		letter-spacing: .5px;
+		margin-bottom: 31px;
+		color: var(--text-dark);
+	}
+
+	ion-list {
+		margin-bottom: 17px;
+	}
+
+	h2 {
+		margin: 0;
+		color: var(--primary);
+		font-weight: 600;
+		font-size: .8rem;
+		letter-spacing: .5px;
+		padding-top: 32px;
+		padding-bottom: 25px;
+	}
+
+
+
+	.quick_signin {
+		padding-top: 16px;
+		padding-bottom: 32px;
+
+		p {
+			margin-bottom: 28px;
+		}
+
+		ion-row {
+			margin: 0 -10px;
+
+			ion-col {
+				padding: 0 10px !important;
+
+				.button.btn {
+
+					img {
+						width: 19px;
+						position: relative;
+						left: -9px;
+					}
+
+
+					&.facebook {
+						--background: #3C5A9A !important;
+					}
+
+					&.google {
+						--background: none !important;
+						color: #000 !important;
+						font-weight: 500;
+
+					}
+
+				}
+			}
+		}
+	}
+
+	.registered_yet {
+		margin-top: 24px;
+
+		p {
+			margin-bottom: 16px;
+		}
+
+		ion-button.btn.button-outline {
+			color: var(--primary);
+			font-weight: 500;
+			font-size: .85rem;
+		}
+	}
+}
+
+ion-content.background {
+ 		--background: url(../../assets/imgs/bg.jpg);
+
+ 	}
+ ion-header.background {
+ 		--background: url(../../assets/imgs/bg.jpg);
+
+ 	}

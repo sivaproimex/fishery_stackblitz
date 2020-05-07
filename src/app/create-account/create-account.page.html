@@ -1,0 +1,38 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+		</ion-buttons>
+		<ion-title>
+			{{"create_account" | translate}}
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+	<div class="form">
+		<p class="ion-text-center">{{"create_account_label" | translate}} {{"app_title" | translate}}</p>
+		   <form [formGroup]="signupForm">
+		<ion-list lines="none">
+			<ion-item lines="none">
+				<ion-label position="fixed">{{'full_name' | translate}}</ion-label>
+				<ion-input class="ion-text-end" type="text" formControlName="full_name" placeholder="John smith"></ion-input>
+			</ion-item>
+			<ion-item lines="none">
+				<ion-label position="fixed">{{'email_address' | translate}}</ion-label>
+				<ion-input class="ion-text-end" type="email" formControlName="email" placeholder="John@mail.com"></ion-input>
+			</ion-item>
+			<ion-item lines="none">
+				<ion-label position="fixed">{{'mobile' | translate}} (+91)</ion-label>
+				<ion-input class="ion-text-end" type="tel" formControlName="mobile_number" placeholder="9789639143"></ion-input>
+			</ion-item>
+
+		</ion-list>
+		<ion-button size="large" expand="block" class="btn" [disabled]="!signupForm.valid" (click)="onRegisterSubmit()">{{'continue' | translate}}</ion-button>
+	</form>
+	</div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+	<p class="ion-text-center" (click)="sign_in()">{{"already_registered" | translate}} <span>{{"sign_in" | translate}}</span></p>
+</ion-footer>

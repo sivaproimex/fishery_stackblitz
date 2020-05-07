@@ -1,0 +1,75 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button><img src="assets/imgs/ic_menu.png"></ion-menu-button>
+		</ion-buttons>
+		<ion-title>
+			{{'home_cat_title' | translate}}
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<div class="container d-flex">
+
+
+		<div class="category_row">
+		<h4 class="ion-text-center">{{'home_cat_title' | translate }}</h4>
+		
+			<ion-row>
+			<ion-col size="4">
+				<div class="item_box ion-text-center" (click)="product_list()">
+					<div class="img_box center_img">
+						<img src="assets/imgs/category/category_19.png" class="crop_img">
+					</div>
+					<h2>Vegetables & <br> Fruits</h2>
+				</div>
+			</ion-col>
+			<ion-col size="4">
+				<div class="item_box ion-text-center" (click)="product_list()">
+					<div class="img_box center_img">
+						<img src="assets/imgs/category/category_20.png" class="crop_img">
+					</div>
+					<h2>Bakery & Dairy <br> products</h2>
+				</div>
+			</ion-col>
+			<ion-col size="4">
+				<div class="item_box ion-text-center" (click)="product_list()">
+					<div class="img_box center_img"> 
+						<img src="assets/imgs/category/category_3.png" class="crop_img">
+					</div>
+					<h2>Foodgrains Oil <br> & masaala</h2>
+				</div>
+			</ion-col>
+
+			<ion-col size="4">
+				<div class="item_box ion-text-center" (click)="product_list()">
+					<div class="img_box center_img">
+						<img src="assets/imgs/category/category_4.png" class="crop_img">
+					</div>
+					<h2>Beverages & <br> drinks</h2>
+				</div>
+			</ion-col>
+			<ion-col size="4">
+				<div class="item_box ion-text-center" (click)="product_list()">
+					<div class="img_box center_img">
+						<img src="assets/imgs/category/category_5.png" class="crop_img">
+					</div>
+					<h2>Branded foods <br> products</h2>
+				</div>
+			</ion-col>
+			<ion-col size="4">
+				<div class="item_box ion-text-center" (click)="product_list()">
+					<div class="img_box center_img">
+						<img src="assets/imgs/category/category_6.png" class="crop_img">
+					</div>
+					<h2>Beauty & <br>hygiene</h2>
+				</div>
+			</ion-col>
+
+
+
+		</ion-row>
+	</div>
+	</div>
+</ion-content>

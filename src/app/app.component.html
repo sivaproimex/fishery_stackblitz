@@ -1,0 +1,59 @@
+<ion-app dir="ltr">
+	<ion-split-pane contentId="main-content">
+		<ion-menu menuId="custom" contentId="main-content" type="overlay">
+			<ion-header>
+				<div class="profile_box">
+					<div class="profile_img center_img">
+						<img src="assets/imgs/logo.png" class="crop_img">
+					</div>
+					<div class="profile_details">
+						<h2>{{"hey" | translate}} Sam Smith</h2>
+					</div>
+				</div>
+
+				<div class="menu_tabs">
+					<ion-row>
+						<ion-col size="6" menuClose (click)="my_account()">
+							<ion-menu-toggle auto-hide="false">
+								<p class="d-flex">
+									<span class="ion-text-start">
+										<img src="assets/imgs/ic_my_profile.png">
+									</span>
+									{{ 'profile_my' | translate }}
+								</p>
+							</ion-menu-toggle>
+						</ion-col>
+
+						<ion-col size="6" menuClose (click)="my_account()">
+							<ion-menu-toggle auto-hide="false">
+								<p class="d-flex">
+									<span class="ion-text-start">
+										<img src="assets/imgs/ic_my_addresses-2.png">
+									</span>
+									{{ 'my_address' | translate }}
+								</p>
+							</ion-menu-toggle>
+						</ion-col>
+					</ion-row>
+				</div>
+			</ion-header>
+			<ion-content>
+				<ion-list lines="none">
+					<ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+						<ion-item detail="false" [routerDirection]="'root'" [routerLink]="[p.url]">
+							<div class="item_inner d-flex">
+								<div class="img_box">
+									<img data-src="{{p.image}}">
+								</div>
+								<h2>{{ p.title | translate}}</h2>
+							</div>
+						</ion-item>
+					</ion-menu-toggle>
+
+					
+				</ion-list>
+			</ion-content>
+		</ion-menu>
+		<ion-router-outlet id="main-content" class="background-image"></ion-router-outlet>
+	</ion-split-pane>
+</ion-app>

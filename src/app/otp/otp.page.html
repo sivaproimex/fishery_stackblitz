@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+           <ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+        </ion-buttons>
+
+
+        <ion-title>
+            <div class="item_inner d-flex">
+                <span class="center">Login OTP Verification</span>
+
+                <!-- <span class="end" (click)="home()">{{"skip" | translate}}</span> -->
+            </div>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+        <form [formGroup]="otpForm">
+    <div class="form">
+        <p class="ion-text-center">OTP </p>
+        <ion-list lines="none">
+            <ion-item lines="none">
+            <ion-input type="tel" class="inputBorder marginTop" formControlName="otpInput1" #otp1 maxlength="1" [(ngModel)]="otpInput1" (ionChange)="next(otp2,'1')"></ion-input>
+            <ion-input type="tel" class="inputBorder marginTop" formControlName="otpInput2" #otp2 maxlength="1" [(ngModel)]="otpInput2" (ionChange)="next(otp3,'2')"></ion-input>
+            <ion-input type="tel" class="inputBorder marginTop" formControlName="otpInput3" #otp3 maxlength="1" [(ngModel)]="otpInput3" (ionChange)="next(otp4,'3')"></ion-input>
+            <ion-input type="tel" class="inputBorder marginTop" formControlName="otpInput4" #otp4 maxlength="1" [(ngModel)]="otpInput4"></ion-input>
+            </ion-item>
+
+        </ion-list>
+        <ion-button size="large" expand="block" class="btn" [disabled]="!otpForm.valid" (click)="verify()">submit</ion-button>
+         <!--    <h2 class="d-flex">1:3 Mins Left  <span class="end">Resend</span></h2> -->
+    </div>
+</form>
+</ion-content>
+<ion-footer class="ion-no-border">
+    <p class="ion-text-center" (click)="sign_in()">Go to <span>sign in</span></p>
+</ion-footer>

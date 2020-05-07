@@ -1,0 +1,33 @@
+.form {
+	padding-top: 40px;
+
+	p {
+		font-size: 0.8rem;
+		font-weight: 400;
+		margin: 0;
+		letter-spacing: .5px;
+		margin-bottom: 31px;
+		color: var(--text-dark);
+	}
+
+	ion-list {
+		margin-bottom: 17px;
+	}
+}
+
+ion-footer {
+	padding:  10px;
+	p {
+		font-size: 0.65rem;
+		font-weight: 400;
+		margin: 0;
+		letter-spacing: .5px;
+		color: var(--text-dark);
+		padding-bottom: 18px;
+		span{
+			color: var(--primary);
+			font-weight: 500;
+			
+		}
+	}
+}
